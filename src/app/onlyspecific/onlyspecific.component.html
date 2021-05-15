@@ -1,0 +1,25 @@
+<h1>
+    Enroll
+</h1>
+{{value}}
+{{value1}}
+<div class="allcourses">
+<button mat-raised-button color="primary" type="submit" (click)="checkspecific()">CheckAvailability</button>
+</div>
+<table *ngIf="show"> 
+    
+    <tr>
+        <th scope="col">Faculty Name</th>
+        <th scope="col">Contact Number</th>
+        <th scope="col">Course Name</th>
+    </tr>
+<tr *ngFor="let obj of result">
+<!-- <div *ngFor="let obj1 of courses"> -->
+    
+   
+    <td>{{obj.facultyName}}</td>
+    <td>{{obj.facultyMobile}}</td>
+    <td>{{obj.courseName}}</td>
+<!-- </div> -->
+</tr>
+</table>    

@@ -1,0 +1,25 @@
+<h1>
+    Faculty Details
+</h1>
+{{value}}
+<div class="allbutton">
+<button mat-raised-button color="primary" type="submit" (click)="check1()">Alldetails</button>
+</div>
+<table *ngIf="show"> 
+<tbody>
+    <th>FacultyID</th>
+        <th>FacultyName</th>
+        <th>FacutlyMobile</th>
+        <th>FacutlyEmail</th>
+        <th>Qualification</th>
+        <th>WorkLocation</th>
+<tr *ngFor="let obj of users">
+    <td>{{obj.facultyId}}</td>
+    <td>{{obj.facultyName}}</td>
+    <td>{{obj.facultyMobile}}</td>
+    <td>{{obj.facultyEmail}}</td>
+    <td>{{obj.highestQualification}}</td>
+    <td>{{obj.workLocation}}</td>
+</tr>
+
+<!-- <button type="submit" (click)="check2()">Course Details</button>  -->

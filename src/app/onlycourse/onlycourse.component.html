@@ -1,0 +1,24 @@
+<h1>
+    Courses Available
+</h1>
+{{value}}
+<div class="allcourses">
+<button mat-raised-button color="primary" type="submit" (click)="checkcourse()">OnlyCourses</button>
+</div>
+<table *ngIf="show"> 
+<tbody>
+    <th>courseId</th>
+        <th>courseName</th>
+        <th>durationHours</th>
+        <th>passScore</th>
+        <th>instructorId</th>
+<tr *ngFor="let obj of courses">
+    <td>{{obj.courseId}}</td>
+    <td>{{obj.courseName}}</td>
+    <td>{{obj.durationHours}}</td>
+    <td>{{obj.passScore}}</td>
+    <td>{{obj.instructorId}}</td>
+</tr>
+<!-- <button type="submit" (click)="check2()">Course Details</button> -->
+</tbody>
+</table>

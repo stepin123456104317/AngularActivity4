@@ -1,0 +1,13 @@
+/* mat-toolbar {
+    height: 64px;
+    position: fixed;
+    z-index: 100;
+    width: 100%  !important;
+} */
+div{
+    padding-left: 65%;
+}
+a{
+    color: black;
+    font-weight: bolder;
+}

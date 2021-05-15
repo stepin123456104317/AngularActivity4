@@ -1,0 +1,21 @@
+<h1>
+    Need Faculty
+</h1>
+{{value}}
+{{value1}}
+<div class="Nofaculty">
+    <button mat-raised-button color="primary" type="submit" (click)="NoFaculty()">CheckAvailability</button>
+    </div>
+<table *ngIf="show"> 
+    <th>Course Name</th>
+<tr>
+<!-- <div *ngFor="let obj of faculty1">
+<div *ngFor="let obj1 of courses2">
+<div *ngIf="obj.facultyId!=obj1.instructorId">  -->
+    <div *ngFor="let obj1 of result">
+    <td>{{obj1}}</td>
+    
+</div>
+
+</tr>
+</table>
