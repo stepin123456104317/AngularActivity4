@@ -58,25 +58,6 @@ this.result=[];
       }
     }
     console.log(this.result);
-// for(var i=0;i<this.faculty1.length;i++){
-//   this.example1=this.faculty1.facultyId;
-//   }
-// for(var j=0;j<this.courses2.length;j++){
-//   this.example2=this.courses2.instructorId;
-// }
-// for(var l=0;i<this.example1.length;l++)
-// {
-//   for(var m=0;m<this.example2.length;m++)
-//   {
-//     if(this.example1[l]==this.example2[m])
-//     {
-//         this.flag=1;
-//     }
-//     else{
-//       this.flag=0;
-//       return this.example2.instructorId;
-//     }
-//   }
 
 }
 }
